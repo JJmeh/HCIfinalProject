@@ -7,7 +7,9 @@ body{
     margin: 0;
     font-family: 'Comfortaa';
     hyphens: auto;
-    background-color: rgb(7, 7, 7);
+    background-color: #000000;
+    color: white;
+    /* rgb(7, 7, 7); */
     /* background-color: white; */
 }
 
@@ -18,7 +20,8 @@ a
 
 .navbar{
     display:flex;
-    background-color: transparent;/*rgb(7, 7, 7);*/
+    /*background-color: transparent;/*rgb(7, 7, 7);*/
+    background-image: linear-gradient(black,#000000d2, transparent);
     flex-direction: row;
     height: 10%;
     width: 100%;
@@ -28,6 +31,7 @@ a
     position: fixed;
     top: 0;
     width: 100vw;
+    z-index: 1000;
 }
 
 #logo-left
@@ -47,6 +51,7 @@ a
 .bannerish
 {
     width: 100%;
+    /* height: 100vh; */
     object-fit: contain;
     /* transform: scale(1); */
 }
@@ -121,4 +126,202 @@ ul, li
 {
     transform: scale(1.05); /*how much it transforms*/
     /*color: #00636c;*/
+}
+
+.center-in-img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+
+.content-image
+{
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.content-image h1 {
+    font-size: 60px;
+    margin: 0px;
+}
+
+.content-image h2 {
+    font-weight: normal;
+}
+
+#SignUpButton
+{
+    margin : 10px;
+    background-color: #1abecd;
+    border: none;
+    color: white;
+    padding: 18px 39px;
+    text-align: center;
+    text-align: none;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform .2s; /*time for transform*/
+}
+
+#SignUpButton:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background:#000000;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    transition: transform .2s;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #1abecd;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+.image-slider
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container-container
+{
+    width: 60%;
+}
+
+  .container-container h1
+  { 
+    text-align: center;
+  }
+
+  .fade-in {
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.75s;
+    animation-name: fade-in;
+    animation-duration: 0.75s;
+  }
+  
+  @-webkit-keyframes fade-in {
+    from {opacity: 0.1}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade-in {
+    from {opacity: 0.1}
+    to {opacity: 1}
+  }
+
+
+
+#benefit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+#benefit img{
+    width: 20%;
+    margin: 5%;
+}
+
+.benefit-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.benefit-text-left{
+    text-align: right;
+    /* font-size: */
+}
+
+.benefit-text-right{
+    text-align: left;
+    /* font-size: */
+}
+
+.row-container-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+    justify-items: stretch;
+}
+
+.column-container-container
+{
+    flex: 50%;
+}
+
+.mov-poster-img
+{
+    object-fit: contain;
+    width: 80%;
+}
+
+#mov-title
+{
+    text-align: left;
+}
+
+#mov-desc
+{
+    text-align: left;
 }

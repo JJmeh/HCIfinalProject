@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="navbar">
-        <a href="#" class="logo-a"><img src="assets/letflixlogo-01-2.png" alt="" id="logo-left"></a>
-            <ul id="mainMenu">
-                <li><a href="#">Dramas</a></li>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Subscription</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        <div>
-            <a href="#" id="LoginButton">Login</a>
+      <a href="#" class="logo-a"
+        ><img src="assets/letflixlogo-01-2.png" alt="" id="logo-left"
+      /></a>
+      <ul id="mainMenu">
+        <li><a href="#">Dramas</a></li>
+        <li><a href="#">Plans</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div>
+        <a href="#" id="LoginButton">Login</a>
+      </div>
+    </div>
+
+    <div class="content-image">
+      <img class="bannerish" src="assets/rsz_bannerish.png" alt="" />
+      <div class="center-in-img">
+        <h1>Experience Thousands of movies, in 4k.</h1>
+        <h2>All in the palm of your hand</h2>
+        <h2>What are you waiting for? Sign up now</h2>
+        <!--<h1>BUTTON HERE</h1>-->
+        <a href="#" id="SignUpButton">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="image-slider">
+      <!-- Slideshow container -->
+      <div class="container-container">
+        <h1>Our Best Movies, Ever</h1>
+        <div class="slideshow-container">
+          <!-- Full-width slides/quotes -->
+          <div class="mySlides fade-in">
+            <div class="row-container-container">
+              <div class="column-container-container">
+                <img src="assets/poster1.jpeg" alt="" class="mov-poster-img">
+              </div>
+              <div class="column-container-container">
+                <div class="column-container-container-container">
+    <h1 id="mov-title">Avengers: Endgame (2019)</h1>
+                    <p id="mov-desc">Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner -- must figure out a way to bring back their vanquished allies for an epic showdown with Thanos -- the evil demigod who decimated the planet and the universe.</p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides fade-in">
+            <div class="row-container-container">
+                <div class="column-container-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Minions_poster.jpg" alt="" class="mov-poster-img">
+                </div>
+                <div class="column-container-container">
+                  <h1>Minions (2015)</h1>
+                  <p>Evolving from single-celled yellow organisms at the dawn of time, Minions live to serve, but find themselves working for a continual series of unsuccessful masters, from T. Rex to Napoleon. Without a master to grovel for, the Minions fall into a deep depression. But one minion, Kevin, has a plan; accompanied by his pals Stuart and Bob, Kevin sets forth to find a new evil boss for his brethren to follow. Their search leads them to Scarlet Overkill, the world's first-ever super-villainess.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="mySlides fade-in">
+            <div class="row-container-container">
+                <div class="column-container-container">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png" alt="" class="mov-poster-img">
+                </div>
+                <div class="column-container-container">
+                  <h1>Kimi No Na wa (2016)</h1>
+                  <p>Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.</p>
+                </div>
+              </div>
+          </div>
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="benefit">  
+        <div class="benefit-item">
+            <div class="benefit-text-left">
+                <h1>Enjoy Everywhere</h1>
+                <p>Stream from any smart device, anytime, anywhere</p>
+            </div>
+            <img src="https://cdn.discordapp.com/attachments/826063912260075560/826064056326422558/gilgahead-01.png" class =benefit-image>
+        </div>
+        
+        <div class="benefit-item">
+            <img src="https://cdn.discordapp.com/attachments/826063912260075560/826064056326422558/gilgahead-01.png" class =benefit-image>
+            <div class="benefit-text-right">
+                <h1>Download Anything</h1>
+                <p>Save every movie you ever want to, as much as you like</p>
+        </div>
         </div>
     </div>
 
-    <div class="content">
-            <img class="bannerish" src="assets/rsz_bannerish.png" alt="">
-        
-    </div>
-    <div class="upper">
-        
-    </div>  
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
