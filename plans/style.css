@@ -185,7 +185,7 @@ ul, li
   
   /* Slides */
   .mySlides {
-    /* display: none; */
+    display: none;
     padding: 80px;
     text-align: center;
     color: white;
