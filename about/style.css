@@ -100,6 +100,13 @@ ul, li
     transition: transform .2s; /*time for transform*/
 }
 
+#mainMenu .selected
+{
+    border-bottom: 3px solid #1abecd;
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+
 #mainMenu a:hover
 {
     /* color: #00636c; */
@@ -185,8 +192,8 @@ ul, li
   
   /* Slides */
   .mySlides {
-    display: none;
-    padding: 80px;
+    /* display: none; */
+    padding: 10px;
     text-align: center;
     color: white;
   }
@@ -219,14 +226,7 @@ ul, li
     color: white;
     transform: scale(1.05);
   }
-  
-  
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+
 
 .image-slider
 {
@@ -234,11 +234,12 @@ ul, li
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0 0 5% 0;
 }
 
 .container-container
 {
-    width: 60%;
+    width: 70%;
 }
 
   .container-container h1
@@ -264,43 +265,13 @@ ul, li
   }
 
 
-
-#benefit{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
-}
-
-#benefit img{
-    width: 20%;
-    margin: 5%;
-}
-
-.benefit-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.benefit-text-left{
-    text-align: right;
-    /* font-size: */
-}
-
-.benefit-text-right{
-    text-align: left;
-    /* font-size: */
-}
-
+  
 .row-container-container
 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     justify-content: space-between;
     justify-items: stretch;
 }
@@ -310,10 +281,15 @@ ul, li
     flex: 50%;
 }
 
+.column-container-container p{
+    font-size: large;
+
+}
+
 .mov-poster-img
 {
     object-fit: contain;
-    width: 80%;
+    width: 50%;
 }
 
 #mov-title
@@ -321,7 +297,198 @@ ul, li
     text-align: left;
 }
 
+h1
+{
+    font-size: 50px;
+}
+
 #mov-desc
 {
     text-align: left;
+    font-size: 18px;
+}
+
+.leadership{
+    height: 100vh;
+}
+
+
+.leader-title{
+    margin: 0 0 5% 0;
+}
+
+
+.leadership{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row-control{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    margin: 5% 10% 5% 10%;
+}
+
+.leader-container{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+    margin: 0 10% 0 10%;
+}
+
+.leader-container:hover{
+    transform: scale(1.02);
+}
+ 
+
+.leader-name{
+    margin: 5% 0 2% 0;
+}
+
+.leader-job{
+    margin: 0 0 10% 0;
+}
+
+.leader-img{
+    object-fit: contain;
+    width: 15vw;
+}
+
+.leader-name{
+    color: #1abecd;
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+.career{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.career h1{
+    margin: 0 0 1% 0;
+}
+
+.career p{
+    margin: 0 0 2% 0;
+}
+
+#CareerButton
+{
+    margin : 10px;
+    background-color: #1abecd;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-align: center;
+    text-align: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 15px;
+    transition: transform .2s; /*time for transform*/
+}
+
+#CareerButton:hover
+{
+    transform: scale(1.05); /*how much it transforms*/
+    /*color: #00636c;*/
+}
+
+
+.navbar-responsive{
+    display:none;
+    /*background-color: transparent;/*rgb(7, 7, 7);*/
+    background-image: linear-gradient(black,#000000d2, transparent);
+    flex-direction: row;
+    height: 11%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    position: fixed;
+    top: 0;
+    /* width: 100vw; */
+    z-index: 1000;
+}
+
+.hamburger-menu{
+    width: 8%;
+    display: none;
+    margin: 5%;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar
+    {
+        display: none;
+    }
+    .navbar-responsive
+    {
+        justify-content: space-between;
+        display: flex;
+    }
+    .logo-a
+    {
+        width: 25%;
+    }
+    .hamburger-menu
+    {
+        display: block;
+        width: 5%;
+    }
+    #LoginButton
+    {
+        margin: 15px;
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 5%;
+        text-decoration: none;
+        font-size: 6vh;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        font-size: 60px;
+        width: 5%;
+      }
 }

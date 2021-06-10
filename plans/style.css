@@ -100,6 +100,13 @@ ul, li
     transition: transform .2s; /*time for transform*/
 }
 
+#mainMenu .selected
+{
+    border-bottom: 3px solid #1abecd;
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+
 #mainMenu a:hover
 {
     /* color: #00636c; */
@@ -173,155 +180,140 @@ ul, li
     transform: scale(1.05);
 }
 
+.perks{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+}
 
-
-
-
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    background:#000000;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
+.title{
     font-weight: bold;
-    font-size: 20px;
-    border-radius: 3px;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    transition: transform .2s;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #1abecd;
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
-
-.image-slider
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container-container
-{
-    width: 60%;
-}
-
-  .container-container h1
-  { 
-    text-align: center;
-  }
-
-  .fade-in {
-    -webkit-animation-name: fade-in;
-    -webkit-animation-duration: 0.75s;
-    animation-name: fade-in;
-    animation-duration: 0.75s;
-  }
-  
-  @-webkit-keyframes fade-in {
-    from {opacity: 0.1}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade-in {
-    from {opacity: 0.1}
-    to {opacity: 1}
-  }
-
-
-
-#benefit{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
-}
-
-#benefit img{
-    width: 20%;
+    font-size:50px;
     margin: 5%;
 }
 
-.benefit-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.benefit-text-left{
-    text-align: right;
-    /* font-size: */
-}
-
-.benefit-text-right{
-    text-align: left;
-    /* font-size: */
-}
-
-.row-container-container
-{
-    display: flex;
+.perks-list{
+    display:flex;
     flex-direction: row;
     align-items: center;
-    height: 50vh;
-    justify-content: space-between;
-    justify-items: stretch;
+    justify-content: center;
+    width: 80vw;
+    margin: 0;
 }
 
-.column-container-container
-{
-    flex: 50%;
+.perks-container{
+    width: 30%;
 }
 
-.mov-poster-img
-{
-    object-fit: contain;
-    width: 80%;
+.perks-gold{
+    background-color: rgb(251, 199, 54);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#mov-title
-{
-    text-align: left;
+.perks-silver{
+    background-color: rgba(246, 246, 246, 0.726);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#mov-desc
-{
-    text-align: left;
+.perks-bronze{
+    background-color: rgba(197, 89, 0, 0.767);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.navbar-responsive{
+    display:none;
+    background-image: linear-gradient(black,#000000d2, transparent);
+    flex-direction: row;
+    height: 11%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    position: fixed;
+    top: 0;
+    /* width: 100vw; */
+    z-index: 1000;
+}
+
+.hamburger-menu{
+    width: 8%;
+    display: none;
+    margin: 5%;
+}
+
+/* FOR NAVBA*/
+@media screen and (max-width: 900px) {
+    .navbar
+    {
+        display: none;
+    }
+    .navbar-responsive
+    {
+        justify-content: space-between;
+        display: flex;
+    }
+    .logo-a
+    {
+        width: 25%;
+    }
+    .hamburger-menu
+    {
+        display: block;
+        width: 5%;
+    }
+    #LoginButton
+    {
+        margin: 15px;
+        padding: 8px 18px;
+        font-size: 12px;
+    }
+
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 5%;
+        text-decoration: none;
+        font-size: 6vh;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        font-size: 60px;
+        width: 5%;
+      }
 }
