@@ -363,7 +363,7 @@ ul, li
 
 #mov-1
 {
-    display: block;
+    display: none;
 }
 
 #mov-2
@@ -383,7 +383,7 @@ ul, li
 
 #mov-5
 {
-    display: none;
+    display: block;
 }
 
 @media screen and (max-width: 900px) {

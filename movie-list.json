@@ -2,7 +2,7 @@
     "dramas" : [
     {
         "title" : "Avengers: Endgame (2019)",
-        "link_image": "/assets/poster1.jpeg",
+        "link_image": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
         "countries": [1, 2, 3, 4, 5]
     },
     {
@@ -13,16 +13,16 @@
     {
         "title": "Kimi No Na wa (2016)",
         "link_image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-        "countries": [1, 3, 4]
+        "countries": [1, 3, 4, 5]
     },
     {
-        "title": "test name 1",
-        "link_image": "/assets/poster1.jpeg",
+        "title": "Tenet (2020)",
+        "link_image": "https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg",
         "countries": [2, 5]
     },
     {
-        "title": "test name 2",
-        "link_image": "/assets/poster1.jpeg",
+        "title": "Interstellar (2014)",
+        "link_image": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
         "countries": [5]
     }]
 }
