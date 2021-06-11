@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>LetFlix</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="../" class="logo-a"
-        ><img src="../assets/letflixlogo-01-2.png" alt="" id="logo-left"
-      /></a>
-      <ul id="mainMenu">
-        <li><a href="#" class="selected">Drama</a></li>
-        <li><a href="../plans">Plans</a></li>
-        <li><a href="../subscription">Subscription</a></li>
-        <li><a href="../about">About</a></li>
-      </ul>
-      <div>
-        <a href="#" id="LoginButton">Login</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>LetFlix</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../" class="logo-a"><img src="../assets/letflixlogo-01-2.png" alt="" id="logo-left" /></a>
+    <ul id="mainMenu">
+      <li><a href="#" class="selected">Drama</a></li>
+      <li><a href="../plans">Plans</a></li>
+      <li><a href="../subscription">Subscription</a></li>
+      <li><a href="../about">About</a></li>
+    </ul>
+    <div>
+      <a href="#" id="LoginButton">Login</a>
+    </div>
+  </div>
+
+  <div class="navbar-responsive">
+    <img src="/assets/hamburger.png" class="hamburger-menu" />
+    <a href=".." class="logo-a"><img src="../assets/letflixlogo-01-2.png" alt="" id="logo-left" /></a>
+    <div id="myNav" class="overlay">
+      <img src="/assets/x.png" class="closebtn" />
+      <div class="overlay-content">
+        <a href="/drama/">Drama</a>
+        <a href="/plans/">Plans</a>
+        <a href="/subscription/">Subscription</a>
+        <a href="/about/">About</a>
       </div>
     </div>
-  
-    <div class="navbar-responsive">
-      <img src="/assets/hamburger.png" class="hamburger-menu" />
-      <a href=".." class="logo-a"
-        ><img src="../assets/letflixlogo-01-2.png" alt="" id="logo-left"
-      /></a>
-      <ul id="mainMenu">
-        <li><a href="drama/">Drama</a></li>
-        <li><a href="plans/">Plans</a></li>
-        <li><a href="subscription/">Subscription</a></li>
-        <li><a href="about/">About</a></li>
-      </ul>
 
-      <div id="myNav" class="overlay">
-        <img src="/assets/x.png" class="closebtn" />
-        <div class="overlay-content">
-          <a href="/drama/">Drama</a>
-          <a href="/plans/">Plans</a>
-          <a href="/subscription/">Subscription</a>
-          <a href="/about/">About</a>
+    <div>
+      <a href="#" id="LoginButton">Login</a>
+    </div>
+  </div>
+  <div class="main-content">
+    <div class="selector-for-country">
+      <h1 class="selector-text">Movies available in</h1>
+      <div class="spacer"></div>
+      <div class="dropdown">
+        <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+        <div class="selector-box" id="selectBox">Asia</div>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Asia</a>
+          <a href="#">Africa</a>
+          <a href="#">America</a>
+          <a href="#">Australia</a>
+          <a href="#">Europe</a>
         </div>
       </div>
-
-      <div>
-        <a href="#" id="LoginButton">Login</a>
-      </div>
     </div>
+    <div class="movie-country"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-  <div class="content-test">
-    
-  </div>
-  <script src="script.js"></script>
-  </body>
 </html>

@@ -2,17 +2,17 @@
 
 //testing
 
-//test for generate template
+//generate div with image etc
 
 function createTag(data, index) {
   var tag = document.createElement("div");
   var id = 'mov-' + index;
-  tag.setAttribute("id", id);
-  tag.setAttribute("class", "TESTYO");
+  // tag.setAttribute("class", id);
+  tag.setAttribute("class", "movie-tile " + id);
 
-  
   var h1 = document.createElement("h1");
   var text = document.createTextNode(data.title);
+  h1.setAttribute("id", "mov-title");
   tag.appendChild(text);
 
   var img = document.createElement("img");
@@ -22,16 +22,7 @@ function createTag(data, index) {
   tag.appendChild(img);
   tag.appendChild(h1);
 
-  $(".content-test").append(tag);
-}
-
-function generateAll(data)
-{
-  var l = data.dramas.length;
-  for (var i = 0; i < l; i++)
-  {
-    createTag(data.dramas[i], index);
-  }
+  $(".movie-country").append(tag);
 }
 
 function generateOnly(data, index)
@@ -45,8 +36,11 @@ function generateOnly(data, index)
   }
 }
 
-
 var curr = 1;
+
+var currCountry = 1;
+
+var country = {"Asia" : 1, "Africa" : 2, "America" : 3, "Australia" : 4, "Europe" : 5,};
 
 $(function(){
   var movData;
@@ -61,28 +55,41 @@ $(function(){
     }
 
   }).fail(function(){ console.log("error")});
+  
+  $('body').click(function(e){
+    var target = $(e.target);
 
-  $(".mySlides").hide();
-  $(".mySlides:nth-child(" + curr + ")").fadeToggle();
-  // console.log("init");
-  $(".next").click(function(){
-    // console.log($(".mySlides").length)
-    $(".mySlides:nth-child(" + curr + ")").hide();
-    curr++;
-    if (curr > $(".mySlides").length) {
-      curr = 1;
+    if (!target.is('.dropdown-content') && !target.is('#selectBox')) { // && !target.is('.dropdown-content a'
+      // console.log('yo dato');
+      $('.dropdown-content').hide();
+      $("#selectBox").attr("class", "selector-box");
     }
-    $(".mySlides:nth-child(" + curr + ")").fadeToggle();
-  })
 
-  //navbar
-  $(".hamburger-menu").click(function(){
-    console.log("clicked")
-    $("#myNav").css("height", "100%")
-  })
-  $(".closebtn").click(function(){
-    $("#myNav").css("height", "0")
-  })
+  });
+  
+  $(".dropdown-content a").click(function(e){
+    $("#selectBox").text(e.target.innerHTML);
+    var selected = country[e.target.innerHTML];
+    var a = '.mov-' + selected;
+    var b = '.mov-' + currCountry;
+    if (a != b) {
+    $(a).show();
+    $(b).hide();
+    currCountry = selected;
+    }
+    
+  });
+
+  $("#selectBox").click(function(){
+    
+    if($(".dropdown-content").is(':visible'))
+    {
+      $("#selectBox").attr("class", "selector-box");
+    }else
+    {
+      $("#selectBox").attr("class", "selector-box-selected");
+    }
+    $(".dropdown-content").toggle();
+  }
+  );
 })
-
-

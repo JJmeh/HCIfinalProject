@@ -48,14 +48,6 @@ a
 }
 
 
-.bannerish
-{
-    width: 100%;
-    /* height: 100vh; */
-    object-fit: contain;
-    /* transform: scale(1); */
-}
-
 .logo-a
 {
     width: 10%;
@@ -65,13 +57,6 @@ ul, li
 {
     list-style: none;
 }
-
-/*#mainMenu
-{
-    display: flex;
-    align-content: center;
-    padding: 0;
-}*/
 
 #mainMenu
 {
@@ -134,204 +119,17 @@ ul, li
     /*color: #00636c;*/
 }
 
-.center-in-img
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-}
-
-.content-image
-{
-    color: white;
-    text-align: center;
-    margin: 0px;
-}
-
-.content-image h1 {
-    font-size: 60px;
-    margin: 0px;
-}
-
-.content-image h2 {
-    font-weight: normal;
-}
-
-#SignUpButton
-{
-    margin : 10px;
-    background-color: #1abecd;
-    border: none;
-    color: white;
-    padding: 18px 39px;
-    text-align: center;
-    text-align: none;
-    display: inline-block;
-    font-size: 30px;
-    font-weight: bold;
-    border-radius: 15px;
-    transition: transform .2s; /*time for transform*/
-}
-
-#SignUpButton:hover{
-    transform: scale(1.05);
-}
-
-
-
-
-
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-    background:#000000;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-    color: white;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 3px;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    transition: transform .2s;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: #1abecd;
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
-
-.image-slider
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container-container
-{
-    width: 60%;
-}
-
-  .container-container h1
-  { 
-    text-align: center;
-  }
-
-  .fade-in {
-    -webkit-animation-name: fade-in;
-    -webkit-animation-duration: 0.75s;
-    animation-name: fade-in;
-    animation-duration: 0.75s;
-  }
-  
-  @-webkit-keyframes fade-in {
-    from {opacity: 0.1}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade-in {
-    from {opacity: 0.1}
-    to {opacity: 1}
-  }
-
-
-
-#benefit{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
-}
-
-#benefit img{
-    width: 20%;
-    margin: 5%;
-}
-
-.benefit-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.benefit-text-left{
-    text-align: right;
-    /* font-size: */
-}
-
-.benefit-text-right{
-    text-align: left;
-    /* font-size: */
-}
-
-.row-container-container
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50vh;
-    justify-content: space-between;
-    justify-items: stretch;
-}
-
-.column-container-container
-{
-    flex: 50%;
-}
-
 .mov-poster-img
 {
     object-fit: contain;
     width: 80%;
+    margin: 0 10%;
 }
 
 #mov-title
 {
-    text-align: left;
+    text-align: center;
 }
-
-#mov-desc
-{
-    text-align: left;
-}
-
 
 .navbar-responsive{
     display:none;
@@ -355,35 +153,91 @@ ul, li
     margin: 5%;
 }
 
-.content-test
+.movie-country
 {
-    margin-top: 200px;
-    margin-left: 100px;
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
 }
 
-#mov-1
+.movie-tile
+{
+    width: 15%;
+    margin: 4px;
+    flex: 0 1 calc(20% - 10px);
+}
+
+.mov-1
+{
+    display: show;
+}
+
+.mov-2
 {
     display: none;
 }
 
-#mov-2
+.mov-3
 {
     display: none;
 }
 
-#mov-3
+.mov-4
 {
     display: none;
 }
 
-#mov-4
+.mov-5
 {
     display: none;
 }
 
-#mov-5
+.main-content
 {
-    display: block;
+    margin-top: 10%;
+    margin: 10% 5% 0 5%;
+}
+
+.selector-text
+{
+    margin: 0;
+    font-size: 2vw;
+}
+
+.selector-for-country
+{
+    display: flex;
+    /* height: 30vh; */
+}
+
+.spacer
+{
+    width: 15px;
+}
+
+.selector-box
+{
+    margin: 0;
+    font-size: 2vw;
+    
+    width: 200px;
+}
+
+.selector-box:hover
+{
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.selector-box-selected
+{
+    margin: 0;
+    font-size: 2vw;
+    
+    width: 200px;
+    color: black;
+    background-color: #f1f1f1;
 }
 
 @media screen and (max-width: 900px) {
@@ -449,4 +303,34 @@ ul, li
         font-size: 60px;
         width: 5%;
       }
+
+      .movie-tile
+{
+    width: 10%;
+    margin: 4px;
+    flex: 0 1 calc(30%);
 }
+}
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd}
