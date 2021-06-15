@@ -195,39 +195,78 @@ ul, li
     margin: 5%;
 }
 
+
 .perks-list{
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 80vw;
     margin: 0;
 }
 
 .perks-container{
-    width: 30%;
+    width: 25vw;
+    margin: 2%;
+    text-align: center;
 }
 
 .perks-gold{
-    background-color: rgb(251, 199, 54);
+    border-style: solid;
+    border-color: rgb(251,199,54);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.perks-gold h1{
+    color: rgb(251,199,54);
 }
 
 .perks-silver{
-    background-color: rgba(246, 246, 246, 0.726);
+    border-style: solid;
+    border-color: rgb(180,180,180);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.perks-silver h1{
+    color: rgb(180,180,180);
 }
 
 .perks-bronze{
-    background-color: rgba(197, 89, 0, 0.767);
+    border-style: solid;
+    border-color: rgb(211, 84, 0);
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.perks-bronze h1{
+    color: rgb(211, 84, 0);
+}
+
+.new-feature{
+    font-weight: bold;
+    color:#1abecd;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25% 0 0 0;
+}
+
+.footer a img{
+    object-fit: contain;
+    width: 30px;
+}
+
+.copyrite{
+    font-size: x-small;
+}
+
 
 
 
@@ -251,6 +290,7 @@ ul, li
     display: none;
     margin: 5%;
 }
+
 
 /* FOR NAVBA*/
 @media screen and (max-width: 900px) {
@@ -316,4 +356,20 @@ ul, li
         font-size: 60px;
         width: 5%;
       }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 0 0;
+}
+
+.footer a img{
+    object-fit: contain;
+    width: 30px;
+}
+
+.copyrite{
+    font-size: x-small;
 }

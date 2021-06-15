@@ -45,10 +45,6 @@ var country = {"Asia" : 1, "Africa" : 2, "America" : 3, "Australia" : 4, "Europe
 $(function(){
   var movData;
   $.getJSON("/movie-list.json", function(data){
-    console.log(data.dramas[0].link_image);
-    movData = data;
-    console.log("yo " + movData);
-    // createTag(data.dramas[0]);
     for (var i = 0; i < 5; i++)
     {
       generateOnly(data, i + 1);
@@ -59,12 +55,10 @@ $(function(){
   $('body').click(function(e){
     var target = $(e.target);
 
-    if (!target.is('.dropdown-content') && !target.is('#selectBox')) { // && !target.is('.dropdown-content a'
-      // console.log('yo dato');
+    if (!target.is('.dropdown-content') && !target.is('#selectBox')) {
       $('.dropdown-content').hide();
       $("#selectBox").attr("class", "selector-box");
     }
-
   });
   
   $(".dropdown-content a").click(function(e){
@@ -77,7 +71,6 @@ $(function(){
     $(b).hide();
     currCountry = selected;
     }
-    
   });
 
   $("#selectBox").click(function(){
