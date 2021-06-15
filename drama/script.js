@@ -44,7 +44,7 @@ var country = {"Asia" : 1, "Africa" : 2, "America" : 3, "Australia" : 4, "Europe
 
 $(function(){
   var movData;
-  $.getJSON("/movie-list.json", function(data){
+  $.getJSON("../movie-list.json", function(data){
     for (var i = 0; i < 5; i++)
     {
       generateOnly(data, i + 1);
