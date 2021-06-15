@@ -11,7 +11,7 @@
   <body>
     <div class="navbar">
       <a href="../" class="logo-a"
-        ><img src="../assets/letflixlogo-01-2.png" alt="" id="logo-left"
+        ><img alt=""  src="../assets/letflixlogo-01-2.png" alt="" id="logo-left"
       /></a>
       <ul id="mainMenu">
         <li><a href="../drama">Drama</a></li>
@@ -20,17 +20,17 @@
         <li><a href="../about">About</a></li>
       </ul>
       <div>
-        <a href="#" id="LoginButton">Login</a>
+        <a href="/subscription" id="LoginButton">Login</a>
       </div>
     </div>
 
     <div class="navbar-responsive">
-      <img src="/assets/hamburger.png" class="hamburger-menu" />
-      <a href="#" class="logo-a"
-        ><img src="/assets/letflixlogo-01-2.png" alt="" id="logo-left"
+      <img alt=""  src="/assets/hamburger.png" class="hamburger-menu" />
+      <a href="/" class="logo-a"
+        ><img alt=""  src="/assets/letflixlogo-01-2.png" alt="" id="logo-left"
       /></a>
       <div id="myNav" class="overlay">
-        <img src="/assets/x.png" class="closebtn" />
+        <img alt=""  src="/assets/x.png" class="closebtn" />
         <div class="overlay-content">
           <a href="/drama/">Drama</a>
           <a href="/plans/">Plans</a>
@@ -44,35 +44,56 @@
       </div>
     </div>
 
-    <div class="forms">
-      <form action="../index.html">
-        <label for="first">First name :</label><br>
-        <input type="text" name="first" id="first"><br>
-        <label for="last">Last name :</label><br>
-        <input type="text" name="last" id="last"><br>
-        <label for="email">email :</label><br>
-        <input type="email" name="email" id="email"><br>
+    <div class="container-forms">
+
+      <form action="/" id="regisForm" novalidate="novalidate">
+        <h1>Fill in to subscribe!</h1>
+        <p>Fill in our registration form to enjoy a cinematic experience like never before.</p>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" value=""><br>
+        <br>
+
         <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password"><br>
-        <label for="retype">Re-type Password :</label><br>
-        <input type="password" name="retype" id="retype"><br>
+        <input type="password" id="password" name="password" value=""><br>
+        <br>
 
-        <input type="radio" name="plans" id="bronze">
-        <label for="plans">Bronze</label><br>
-        <input type="radio" name="plans" id="silver">
-        <label for="plans">Silver</label><br>
-        <input type="radio" name="plans" id="gold">
-        <label for="plans">Gold</label><br>
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked="checked">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
 
+        <br>
+        <label for="preference">Select Plan</label><br>
+        <select name="preference" id="Location">
+            <option value="g" class="golddd">Diamond</option>
+            <option value="s" class="silverdd">Gold</option>
+            <option value="b" class="bronzedd">Silver</option>
+        </select>
+        <br>
+        
+        <br>
+        <label for="checkbox">Terms and condition</label><br>   
+        <input type="checkbox" id="toc" name="toc" value="y">
+        <label for="toc"> I agree to the terms and condition</label>
+        <br>
+
+        <br>
         <input type="submit" value="submit">
-      </form>
+    </form>
+
+      </div>
+    
     </div>
 
     <div class="footer">
       <div class="links">
-        <a href="https://www.instagram.com/LeTflix"><img src="https://cdn.discordapp.com/attachments/843104622747189280/852953610101981264/logo-insta-01.png" alt=""></a>
-        <a href="https://facebook.com/LeTflix"><img src="https://cdn.discordapp.com/attachments/843104622747189280/852954081487355934/logo-fb-01.png" alt=""></a>
-        <a href="https://twitter.com/LeTflix"><img src="https://cdn.discordapp.com/attachments/843104622747189280/852954071647125594/logo-twit-01.png" alt=""></a>
+        <a href="https://www.instagram.com/LeTflix"><img alt=""  src="https://cdn.discordapp.com/attachments/843104622747189280/852953610101981264/logo-insta-01.png" alt=""></a>
+        <a href="https://facebook.com/LeTflix"><img alt=""  src="https://cdn.discordapp.com/attachments/843104622747189280/852954081487355934/logo-fb-01.png" alt=""></a>
+        <a href="https://twitter.com/LeTflix"><img alt=""  src="https://cdn.discordapp.com/attachments/843104622747189280/852954071647125594/logo-twit-01.png" alt=""></a>
       </div>
       <p class="copyrite">Copyright © 2021 LeTflix</p>
     </div>
