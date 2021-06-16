@@ -11,6 +11,7 @@ body{
     color: white;
     /* rgb(7, 7, 7); */
     /* background-color: white; */
+    hyphens: none;
 }
 
 a
@@ -236,7 +237,7 @@ ul, li
     margin: 0;
     font-size: 2vw;
     
-    width: 200px;
+    width: 13vw;
     color: black;
     background-color: #f1f1f1;
 }
@@ -313,6 +314,35 @@ ul, li
 }
 }
 
+@media screen and (max-width: 900px)
+{
+    .main-content
+    {
+        margin-top: 15vh;
+    }
+
+    .selector-text
+    {
+        font-size: 20px;
+    }
+
+    .selector-box, .selector-box-selected
+    {
+        width: 30vw;
+        font-size: 20px;
+    }
+
+    .dropdown-content
+    {
+        min-width: 30vw;
+    }
+
+    #mov-title
+    {
+        font-size: 15px;
+    }
+}
+
   .dropdown {
     position: relative;
     display: inline-block;
@@ -322,7 +352,7 @@ ul, li
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 200px;
+    width: 13vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }

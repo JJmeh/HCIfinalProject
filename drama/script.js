@@ -85,4 +85,12 @@ $(function(){
     $(".dropdown-content").toggle();
   }
   );
+
+  $(".hamburger-menu").click(function(){
+    console.log("clicked")
+    $("#myNav").css("height", "100%")
+  })
+  $(".closebtn").click(function(){
+    $("#myNav").css("height", "0")
+  })
 })

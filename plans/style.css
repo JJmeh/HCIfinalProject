@@ -11,6 +11,7 @@ body{
     color: white;
     /* rgb(7, 7, 7); */
     /* background-color: white; */
+    hyphens: none;
 }
 
 a
@@ -356,6 +357,36 @@ ul, li
         font-size: 60px;
         width: 5%;
       }
+}
+
+@media screen and (max-width: 900px) 
+{
+    .perks-container
+    {
+        width: 60vw;
+        margin: 3vh auto;
+    }
+
+    .title
+    {
+        font-size: 25px;
+    }
+    h1
+    {
+        font-size: 20px;
+    }
+    .perks-list
+    {
+        flex-direction: column;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .perks
+    {
+        height: inherit;
+        margin: 12vh 0;
+    }
 }
 
 .footer{

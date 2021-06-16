@@ -11,6 +11,7 @@ body{
     color: white;
     /* rgb(7, 7, 7); */
     /* background-color: white; */
+    hyphens: none;
 }
 
 a
@@ -491,6 +492,35 @@ h1
         font-size: 60px;
         width: 5%;
       }
+}
+
+@media screen and (max-width: 900px)
+{
+    .row-container-container
+    {
+        flex-direction: column;
+    }
+
+    .image-slider
+    {
+        height: 60vh;
+        margin-top: 15vh;
+    }
+
+    #mov-desc
+    {
+        font-size: 15px;
+    }
+
+    p
+    {
+        text-align: center;
+    }
+
+    .leader-img
+    {
+        width: 30vw;
+    }
 }
 
 .footer{

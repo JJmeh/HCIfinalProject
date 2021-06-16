@@ -10,6 +10,7 @@ body{
     color: white;
     /* rgb(7, 7, 7); */
     /* background-color: white; */
+    hyphens: none;
 }
 
 a
@@ -412,6 +413,74 @@ ul, li
         font-size: 60px;
         width: 5%;
       }
+}
+
+@media screen and (max-width: 900px){
+    .bannerish
+    {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+    .center-in-img h1
+    {
+        font-size: 30px;
+    }
+    .center-in-img h2 {
+        font-size: 20px;
+    }
+    #SignUpButton
+    {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+
+    .container-container
+    {
+        width: 90vw;
+    }
+
+    .container-container h1{
+        font-size: 20px;
+    }
+
+    .row-container-container
+    {
+        flex-direction: column;
+    }
+
+    .column-container-container
+    {
+        flex-direction: row;
+    }
+
+    #mov-desc
+    {
+        font-size: 15px;
+    }
+
+    #mov-title
+    {
+        text-align: center;
+    }
+
+    .mySlides
+    {
+        padding: 40px;
+    }
+
+    .benefit-text-left, .benefit-text-right
+    {
+        height: 100%;
+        font-size: 13px;
+    }
+
+    #benefit
+    {
+        margin: 25vh 0 25vh 0;
+        height: 50vh;
+        justify-content: space-evenly;
+    }
 }
 
 .footer{
